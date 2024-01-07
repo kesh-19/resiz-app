@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ComponentWrapper from "./utils/ComponentWrapper";
 import LeftPane from "./LeftPane";
+import RightPane from "./RightPane";
 
 const Container = () => {
   const [drawerOpen, setDrawerOpen] = useState(true);
@@ -10,10 +11,9 @@ const Container = () => {
     <ComponentWrapper>
       <LeftPane
         drawerOpen={drawerOpen}
-        setDrawerOpen={setDrawerOpen}
         handleDrawerToggle={handleDrawerToggle}
       />
-      <div>R</div>
+      <RightPane />
     </ComponentWrapper>
   );
 };
