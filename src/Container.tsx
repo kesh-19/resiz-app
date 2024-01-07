@@ -8,7 +8,11 @@ const Container = () => {
 
   return (
     <ComponentWrapper>
-      <LeftPane />
+      <LeftPane
+        drawerOpen={drawerOpen}
+        setDrawerOpen={setDrawerOpen}
+        handleDrawerToggle={handleDrawerToggle}
+      />
       <div>R</div>
     </ComponentWrapper>
   );
